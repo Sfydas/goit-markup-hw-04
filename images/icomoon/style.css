@@ -15,6 +15,10 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
 .icon-logo {
   width: 1.7666015625em;
 }
@@ -24,6 +28,10 @@ Single-colored icons can be modified like so:
 }
 
 .icon-logo3 {
+  width: 1.7666015625em;
+}
+
+.icon-logo4 {
   width: 1.7666015625em;
 }
 
@@ -37,12 +45,4 @@ Single-colored icons can be modified like so:
 
 .icon-smartphone {
   width: 0.625em;
-}
-
-.icon-envelope {
-  width: 1.3330078125em;
-}
-
-.icon-logo4 {
-  width: 1.7666015625em;
 }

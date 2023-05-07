@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>goit-markup-hw-03</title>
+    <title>goit-markup-hw-04</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="homework3" />
+    <meta name="description" content="homework4" />
     <!-- ICON -->
     <link rel="icon" href="./images/goit.png" type="image/gif" sizes="16x16" />
     <!-- CSS LINK -->
@@ -40,15 +40,21 @@
           </ul>
         </nav>
         <ul class="list contacts-list">
-          <li>
-            <a class="contacts-list-item" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="item">
+            <a class="contacts-list-item" href="mailto:info@devstudio.com">
+              <svg class="icon-nav">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
-          <li>
+          <li class="item">
             <a class="contacts-list-item" href="tel:+12127724150"
-              >+1 212-772-4150</a
-            >
+              ><svg class="icon-nav">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span>+1 212-772-4150</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -66,12 +72,15 @@
         </div>
       </section>
 
-      <!-- SECTION-ADVANTAGES -->
+      <!-- ADVANTAGES -->
       <section class="section-top">
         <div class="container">
           <h2 class="h2 visually-hidden">Advantages</h2>
           <ul class="list advantages-list">
             <li class="advantages-list-item">
+              <svg class="features-icon">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
               <h3 class="h3">ATTENTION TO DETAILS</h3>
               <p class="advantages-description">
                 We go into all the details and processes of your business to
@@ -79,6 +88,9 @@
               </p>
             </li>
             <li class="advantages-list-item">
+              <svg class="features-icon">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
               <h3 class="h3">PUNCTUALITY</h3>
               <p class="advantages-description">
                 With us, you can feel safe and secure. An important principle of
@@ -86,6 +98,9 @@
               </p>
             </li>
             <li class="advantages-list-item">
+              <svg class="features-icon">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
               <h3 class="h3">PLANNING</h3>
               <p class="advantages-description">
                 You will be able to observe and participate in every phase of
@@ -93,6 +108,9 @@
               </p>
             </li>
             <li class="advantages-list-item">
+              <svg class="features-icon">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
               <h3 class="h3">MODERN TECHNOLOGIES</h3>
               <p class="advantages-description">
                 We use innovative tools to solve assigned tasks. It's time to
@@ -134,7 +152,16 @@
                 <h4 class="h4 team-name">Christopher Walker</h4>
                 <p class="team-position">Product Designer</p>
               </div>
+
+              <div class="item">
+                <a href="" class="client-link" aria-label="Клиент-1">
+                  <svg class="icon-client">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
+
             <li class="team-list-item">
               <img
                 src="./images/img5.jpg"

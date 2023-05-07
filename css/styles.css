@@ -200,6 +200,25 @@ body {
   padding: 32px 0px;
 }
 
+.contacts-list-item {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.icon-nav {
+  fill: currentColor;
+  width: 16px;
+  max-height: 15px;
+  margin-right: 10px;
+}
+
 /* HOVER EFFECTS HEADER */
 
 .current:hover,
@@ -226,9 +245,15 @@ body {
 
 /* HERO */
 .hero-section {
-  background-color: var(--color-dark-mode-background);
+  background: url(../images/background.jpg);
   color: var(--color-primary-background);
   padding: 200px 0px;
+  height: 600px;
+  max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-container {
@@ -314,6 +339,9 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.icons-list {
+  display: flex;
+}
 
 /* SERVICES */
 .services-title {
@@ -379,6 +407,7 @@ body {
   color: #757575;
 }
 
+/* FOOTER */
 .footer {
   background: var(--color-dark-mode-background);
   padding: 60px 0;
