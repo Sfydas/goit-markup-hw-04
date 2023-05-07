@@ -339,8 +339,17 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.icons-list {
-  display: flex;
+.features-icon {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* SERVICES */
@@ -392,7 +401,6 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-list-item:last-child {
   margin-right: 0px;
 }
@@ -407,25 +415,166 @@ body {
   color: #757575;
 }
 
-/* FOOTER */
-.footer {
-  background: var(--color-dark-mode-background);
-  padding: 60px 0;
+/*  */
+.social-link-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 24px;
+  justify-content: center;
+}
+.social-link-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #afb1b8;
+  fill: var(--color-dark);
+
+  border-radius: 50%;
+}
+.social-item:hover,
+.social-item:focus {
+  color: var(--color-primary-background);
+  fill: var(--color-primary-background);
+  background-color: var(--color-primary-brand-focus);
+}
+.icon-social-link:hover,
+.icon-social-link:focus {
+  display: block;
+  fill: currentColor;
 }
 
-.footer-address {
-  font-weight: var(--font-weight-regular);
+/* Regular Customers */
+.client-list {
+  display: flex;
+}
+.client-list .item {
+  width: calc((100% - 150px) / 6);
+}
+.client-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+
+  color: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--color-primary-brand-focus);
+  fill: var(--color-primary-brand-focus);
+  border-color: var(--color-primary-brand-focus);
+}
+
+.icon-client {
+  fill: currentColor;
+  max-width: 86px;
+  max-height: 50px;
+}
+
+.icon-client:hover,
+.icon-client:focus {
+  fill: currentColor;
+}
+
+/* FOOTER */
+.footer a {
+  text-decoration: none;
+}
+footer {
+  color: var(--color-primary-background);
+  background-color: var(--color-dark-mode-background);
+}
+address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+.footer-flex .logo {
+  display: block;
+  margin-bottom: 9px;
+}
+address .item:not(:last-child) {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.footer-offer {
+  display: block;
+  margin-bottom: 21px;
+}
+.adress-transparency,
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-copyright {
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+  margin-top: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  text-align: center;
+}
+footer b {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-top: 28px;
-  margin-bottom: 12px;
-  color: #fff;
+  text-transform: uppercase;
+}
+.footer-soclink {
+  display: flex;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-primary-background);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--color-primary-background);
+  background-color: var(--color-primary-brand);
+}
+.footer-soclink .item:not(:last-child) {
+  margin-right: 11px;
+}
+.footer-social-link {
+  display: block;
+  fill: currentColor;
 }
 
-.footer-contacts-list li {
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 12px;
+.footer-email {
+  display: flex;
+}
+.footer-flex {
+  display: flex;
+  gap: 94px;
+  padding-top: 48px;
+  padding-bottom: 28px;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* LINKS (AS PER STYLE SHEET, NOT USED) */
